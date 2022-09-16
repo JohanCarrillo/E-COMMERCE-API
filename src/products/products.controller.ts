@@ -13,6 +13,10 @@ import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
+import { Auth } from 'src/auth/decorators/auth.decorator';
+import { UserRoles } from 'src/utils/enums';
+import { GetUser } from 'src/auth/decorators/get-user.decorator';
+import { User } from 'src/user/entities/user.entity';
 
 @ApiTags('products')
 @Controller('products')
@@ -22,8 +26,8 @@ export class ProductsController {
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth()
   @Post()
-  create(@Body() createProductDto: CreateProductDto) {
-    return this.productsService.create(createProductDto);
+  create(@Body() createProductDto: CreateProductDto, @GetUser() user: User) {
+    return this.productsService.create(createProductDto, user);
   }
 
   @Get()
@@ -36,6 +40,7 @@ export class ProductsController {
     return this.productsService.findOne(id);
   }
 
+  @Auth(UserRoles.ADMIN)
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth()
   @Patch(':id')
@@ -43,6 +48,7 @@ export class ProductsController {
     return this.productsService.update(id, updateProductDto);
   }
 
+  @Auth(UserRoles.ADMIN)
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth()
   @Delete(':id')

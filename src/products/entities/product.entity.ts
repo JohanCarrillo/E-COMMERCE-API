@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { User } from 'src/user/entities/user.entity';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
 export enum sizesEnum {
   XXS = 'XXS',
@@ -32,4 +33,7 @@ export class Product {
 
   @Column({ type: 'integer', default: 0 })
   stock: number;
+
+  @ManyToOne(() => User, (user) => user.product, { eager: true })
+  user: User;
 }

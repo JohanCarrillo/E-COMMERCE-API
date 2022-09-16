@@ -1,5 +1,6 @@
 import { HttpException, HttpStatus, Injectable, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
+import { User } from 'src/user/entities/user.entity';
 import { Repository } from 'typeorm';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
@@ -14,9 +15,10 @@ export class ProductsService {
 
   private readonly logger = new Logger('ProductsService');
 
-  async create(createProductDto: CreateProductDto) {
+  async create(createProductDto: CreateProductDto, user: User) {
     try {
       const product = this.productRepository.create(createProductDto);
+      product.user = user;
       await this.productRepository.save(product);
       return product;
     } catch (error) {

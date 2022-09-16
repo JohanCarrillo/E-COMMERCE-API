@@ -10,6 +10,11 @@ import {
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { ApiTags } from '@nestjs/swagger';
+// import { AuthGuard } from '@nestjs/passport';
+import { UserRoles } from '../utils/enums';
+// import { RoleProtected } from '../auth/decorators/role-protected.decorator';
+// import { UserRoleGuard } from 'src/auth/guards/user-role.guard';
+import { Auth } from 'src/auth/decorators/auth.decorator';
 // import { UpdateUserDto } from './dto/update-user.dto';
 // import { User } from './entities/user.entity';
 @ApiTags('user')
@@ -22,6 +27,7 @@ export class UserController {
     return this.userService.createUser(createUserDto);
   }
 
+  @Auth(UserRoles.MEMBER)
   @Get()
   findAll() {
     return this.userService.findAll();

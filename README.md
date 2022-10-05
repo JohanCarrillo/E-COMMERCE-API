@@ -6,19 +6,24 @@ This is an API for an E-commerce site I built as part of the BeeSoftLabs bootcam
 This project was built using the following technologies
 * [![NestJS][Nest.js]][NestJS-url]
 * [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
-* [![Docker][JQuery.com]][Docker-url]
+* [![Docker][Docker]][Docker-url]
 
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+## Getting Started
+
+### Prerequisites
+To run the project you need to have installed Node.js (^16.0), Docker and a global installation of NestJS.
+
+### Installation
 
 ```bash
 $ npm install
 ```
 
-## Running the app
+### Running the app
 
 ```bash
 # development
@@ -31,9 +36,12 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Stay in touch
 
-- Author - [Johan Carrillo](https://www.linkedin.com/in/johan-carrillo/)
+## Contact
+
+Johan Carrillo - [@yJohan C.](https://twitter.com/JohanC1907) [LinkedIn]([](https://www.linkedin.com/in/johan-carrillo/))
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 [NestJS-url]: https://nestjs.com/
 [Nest.js]: https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg

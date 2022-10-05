@@ -39,12 +39,12 @@ $ npm run start:prod
 
 ## Contact
 
-Johan Carrillo - [@yJohan C.](https://twitter.com/JohanC1907) [LinkedIn]([](https://www.linkedin.com/in/johan-carrillo/))
+Johan Carrillo - [@Johan C.](https://twitter.com/JohanC1907) - [LinkedIn](https://www.linkedin.com/in/johan-carrillo/)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 [NestJS-url]: https://nestjs.com/
-[Nest.js]: https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg
+[Nest.js]: https://cdn.svgporn.com/logos/nestjs.svg
 [PostgreSQL]: https://www.postgresql.org/media/img/about/press/elephant.png
 [PostgreSQL-url]: https://www.postgresql.org/
 [Docker]: https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png

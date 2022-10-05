@@ -4,7 +4,7 @@ This is an API for an E-commerce site I built as part of the BeeSoftLabs bootcam
 
 ### Built With
 This project was built using the following technologies
-* <a href="https://nestjs.com/" style="text-decoration: none;"><img src="https://cdn.svgporn.com/logos/nestjs.svg" alt="NestJS logo" width="50"/>NestJS</a>
+* <a href="https://nestjs.com/" style="color: black; text-decoration: none;"><img src="https://cdn.svgporn.com/logos/nestjs.svg" alt="NestJS logo" width="50"/>NestJS</a>
 * [![NestJS][Nest.js]][NestJS-url]
 * [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
 * [![Docker][Docker]][Docker-url]
@@ -42,7 +42,7 @@ $ npm run start:prod
 
 Johan Carrillo - [@Johan C.](https://twitter.com/JohanC1907) - [LinkedIn](https://www.linkedin.com/in/johan-carrillo/)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/JohanCarrillo/E-COMMERCE-API](https://github.com/JohanCarrillo/E-COMMERCE-API)
 
 [NestJS-url]: https://nestjs.com/
 [Nest.js]: https://cdn.svgporn.com/logos/nestjs.svg

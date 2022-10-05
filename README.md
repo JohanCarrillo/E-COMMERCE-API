@@ -4,14 +4,12 @@ This is an API for an E-commerce site I built as part of the BeeSoftLabs bootcam
 
 ### Built With
 This project was built using the following technologies
-* <a href="https://nestjs.com/" style="color: black; text-decoration: none;"><img src="https://cdn.svgporn.com/logos/nestjs.svg" alt="NestJS logo" width="50"/>NestJS</a>
-* [![NestJS][Nest.js]][NestJS-url]
-* [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
-* [![Docker][Docker]][Docker-url]
+* <a href="https://nestjs.com/"><img src="https://cdn.svgporn.com/logos/nestjs.svg" alt="NestJS logo" width="50"/></a> NestJS
+* <a href="https://www.postgresql.org/"><img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="NestJS logo" width="50"/></a> PostgreSQL
+* <a href="https://www.docker.com/"><img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="NestJS logo" width="50"/></a> Docker
 
 ## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is an API for an E-commerce site created using [NestJS](https://github.com/nestjs/nest) framework.
 
 ## Getting Started
 

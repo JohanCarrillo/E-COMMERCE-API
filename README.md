@@ -1,6 +1,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is an API for an E-commerce site I built as part of the BeeSoftLabs bootcamp. It has implemented products and users that can be stored in a database, and also an authentication and authorization system (using jsonwebtoken and predefined roles).
+This is an API for an E-commerce site. It has implemented products and users that can be stored in a database, and also an authentication and authorization system (using jsonwebtoken and predefined roles).
 
 ### Built With
 This project was built using the following technologies
